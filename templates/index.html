@@ -12,7 +12,7 @@
             <!-- <img  src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
             <h1 class="display-6 fw-bold text-primary">Welcome to Azure</h1>            
           </div>
-        <form method="post" action="{{url_for('hello')}}">
+        <form method="post" action="https://prod-22.northcentralus.logic.azure.com/workflows/1b2e71951d8d4036bc5e9ad0e52116dd/triggers/When_a_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_a_HTTP_request_is_received%2Frun&sv=1.0&sig=Cnz8fk9gFDnVieaWg073LXBdAY69j8X-n5Ub6opuSzc">
             <div class="col-md-6 mx-auto text-center">
                 <label for="name" class="form-label fw-bold fs-5">Could you please tell me your name?</label>
 
@@ -21,7 +21,7 @@
                     <input type="text" class="form-control" id="name" name="name" style="max-width: 256px;">
                   </div>            
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center my-2">
-                  <button type="submit" class="btn btn-primary btn-lg px-4 gap-3">Say Hello</button>
+                  <button type="submit" class="btn btn-primary btn-lg px-4 gap-3">Send Email</button>
                 </div>            
             </div>
         </form>

@@ -89,7 +89,7 @@
                 } 
 
                 
-                fetch("https://prod-22.northcentralus.logic.azure.com/workflows/1b2e71951d8d4036bc5e9ad0e52116dd/triggers/When_a_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_a_HTTP_request_is_received%2Frun&sv=1.0&sig=Cnz8fk9gFDnVieaWg073LXBdAY69j8X-n5Ub6opuSzc", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ order: cart }) }) .then(response => response.json()) .then(data => { alert("Order placed successfully!"); cart = []; updateCart(); }) .catch(error => { alert("Failed to place order. Please try again."); console.error("Error:", error); });
+                fetch("https://prod-22.northcentralus.logic.azure.com/workflows/1b2e71951d8d4036bc5e9ad0e52116dd/triggers/When_a_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_a_HTTP_request_is_received%2Frun&sv=1.0&sig=Cnz8fk9gFDnVieaWg073LXBdAY69j8X-n5Ub6opuSzc", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ order: cart }) }).then(data => { alert("Order placed successfully!"); cart = []; updateCart(); }) .catch(error => { alert("Failed to place order. Please try again."); console.error("Error:", error); });
             });
         </script>
      </main>      
